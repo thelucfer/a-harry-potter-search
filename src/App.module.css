@@ -1,0 +1,29 @@
+.main {
+  background: var(--color-background);
+  margin: 0.5rem;
+  border-radius: 4px;
+
+  overflow: hidden;
+
+  display: grid;
+}
+
+.footer {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  place-items: center;
+  display: grid;
+
+  padding: 0.5rem;
+  font-size: 0.5rem;
+}
+
+.header {
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+
+  padding: 1rem;
+}
