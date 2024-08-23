@@ -1,0 +1,10 @@
+.wrapper {
+  display: grid;
+  place-content: start;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+
+.title {
+  padding-block: 0.5rem;
+}

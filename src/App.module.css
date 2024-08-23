@@ -6,6 +6,7 @@
   overflow: hidden;
 
   display: grid;
+  justify-content: center;
 }
 
 .footer {
@@ -26,4 +27,36 @@
   );
 
   padding: 1rem;
+
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+
+  & h1 {
+    display: flex;
+  }
+}
+
+.link {
+  font-size: var(--font-size-base);
+
+  @media (--media-l) {
+    font-size: var(--font-size-l);
+  }
+
+  color: var(--color-foreground);
+
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.userLink {
+  color: var(--color-foreground);
+
+  text-decoration: none;
+
+  border: 1px solid var(--color-foreground);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
 }

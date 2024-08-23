@@ -1,0 +1,25 @@
+.wrapper {
+  display: grid;
+  width: 100%;
+
+  overflow-y: auto;
+
+  max-height: 100%;
+}
+
+.listItem {
+  &[aria-checked="true"] {
+    background: var(--color-surface);
+  }
+
+  &[data-focused="true"],
+  &:hover {
+    background: var(--color-primary);
+  }
+
+  padding: 0.5rem;
+
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+}

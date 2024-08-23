@@ -1,0 +1,44 @@
+.wrapper {
+  display: grid;
+
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.listItem {
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+
+  padding: 0.5rem;
+}
+
+.button {
+  display: grid;
+  background: transparent;
+  color: var(--color-foreground);
+
+  width: 1.5rem;
+  padding-inline: 0.5rem;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--color-primary);
+  }
+}
+
+.link {
+  color: var(--color-foreground);
+  text-decoration: none;
+
+  border-bottom: 1px solid transparent;
+
+  transition: border 0.4s ease-in-out;
+  &:hover,
+  &:focus {
+    transition: border 0.2s ease-in-out;
+    border-bottom: 1px solid var(--color-foreground);
+  }
+}
